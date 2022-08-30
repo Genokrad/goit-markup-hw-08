@@ -114,10 +114,12 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   margin-left: auto;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .contacts__list {
     flex-direction: column;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -562,6 +564,15 @@ body {
 }
 
 /* НАВИГАЦИЯ */
+.navigation {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: contents;
+  }
+}
+
 .navigation__list {
   display: flex;
   flex-wrap: wrap;
@@ -914,6 +925,12 @@ footer {
 .pictures {
   padding-top: 47px;
   padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .pictures {
+    display: contents;
+  }
 }
 .pictures__list {
   display: flex;
@@ -938,21 +955,6 @@ footer {
   padding: 27px 0;
 }
 
-@media screen and (min-width: 768px) {
-  .pictures {
-    display: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .pictures {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .pictures {
-    display: contents;
-  }
-}
 /* НАША КОМАНДА */
 .profile-card {
   background-color: var(--team-block-color);

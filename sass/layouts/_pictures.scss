@@ -3,6 +3,10 @@
 .pictures {
   padding-top: 47px;
   padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+      display: contents;
+    }
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -29,20 +33,4 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .pictures {
-  display: none;
-  }
-}
 
-@media screen and (max-width: 767px) {
-  .pictures {
-    display: none;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-  .pictures {
-    display: contents;
-    }
-}
