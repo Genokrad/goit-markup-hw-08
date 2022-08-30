@@ -1,0 +1,17 @@
+.header-positioner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.page-header {
+  border-bottom: 1px solid #ececec;
+  padding: 16px 0;
+  @media screen and (min-width: 768px) {
+    padding: 21px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 24px 0;
+  }
+}
+
+

@@ -1,0 +1,26 @@
+@import './base/base';
+
+@import './components/header-contacts';
+@import './components/container';
+@import './components/logo';
+@import './components/modal';
+@import './components/social';
+@import './components/footer-adress';
+@import './components/footer-form';
+@import './components/navigation';
+@import './components/buttons';
+@import './components/filter';
+
+
+
+@import './layouts/about';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/pictures';
+@import './layouts/profile';
+@import './layouts/vector-card';
+@import './layouts/gallary';
+
+@import './utils/vars';
+@import './utils/is-hiden';

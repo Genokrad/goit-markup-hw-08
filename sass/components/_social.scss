@@ -1,0 +1,41 @@
+.social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  &__link {
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover,
+      &:focus {
+      background-color: var(--accent-color);
+        .social__icone {
+        fill: var(--main-color);
+      }
+    }
+  }
+  &__icone {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+
+
+/* СОЦ СЕТИ ФУТЕР */
+
+.social__link--dark-background {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social__icone--white-fill {
+  fill: var(--main-color);
+}
