@@ -760,6 +760,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .mob-menu__list {
@@ -795,10 +796,15 @@ button {
 .mob-menu-connect-link {
   margin-top: auto;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .mob-menu-connect-link {
+    font-size: 34px;
+  }
 }
 
 .mob-menu-connect-link-p {
@@ -812,6 +818,7 @@ button {
 .mob-menu-social {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .mob-menu-social__link {
