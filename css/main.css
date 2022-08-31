@@ -19,6 +19,8 @@ ol {
 /* ОБЩИЕ */
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 .title {
@@ -1141,23 +1143,6 @@ footer {
 .profile-card__text {
   margin-bottom: 16px;
 }
-.profile-card__img {
-  width: 450px;
-  height: 460px;
-}
-@media screen and (min-width: 768px) {
-  .profile-card__img {
-    width: 354px;
-    height: 374px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .profile-card__img {
-    width: 270px;
-    height: 260px;
-  }
-}
-
 /* Постійні клієнти */
 .vector-card {
   padding-top: 60px;
@@ -1234,9 +1219,21 @@ footer {
   gap: 30px;
 }
 .gallary__item {
-  /* display: block; */
+  width: 100%;
+  /* display: block
+  ; */
   /* position: relative; */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .gallary__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallary__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .gallary__item:hover .gallary__top-text {
   transform: translateY(0);
