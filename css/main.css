@@ -674,7 +674,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 15px 8px;
-  padding-right: 20px;
 }
 @media screen and (min-width: 768px) {
   .filter__list {
@@ -1024,6 +1023,21 @@ footer {
   .hero {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/studio/header-mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/studio/header-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/studio/header-desktop@2x.jpg);
   }
 }
 .hero__wrapper {
