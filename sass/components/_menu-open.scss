@@ -39,6 +39,7 @@
     justify-content: space-between;
   }
 
+
   .mob-menu__list {
     display: flex;
     flex-direction: column;
@@ -57,6 +58,11 @@
   flex-direction: column;
   gap: 64px;
 }
+
+.mob-menu-active {
+  color: var(--accent-color);
+}
+
 .mob-menu-connect-list {
   display: flex;
   flex-direction: column;

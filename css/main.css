@@ -32,6 +32,21 @@ img {
   color: var(--title-text-color);
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
 a {
   color: currentColor;
 }
@@ -767,6 +782,10 @@ button {
   gap: 64px;
 }
 
+.mob-menu-active {
+  color: var(--accent-color);
+}
+
 .mob-menu-connect-list {
   display: flex;
   flex-direction: column;
@@ -832,8 +851,6 @@ button {
 /* СЕКЦИЯ ПРЕИМУЩЕСТВА */
 .about {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
   width: 480px;
 }
 @media screen and (min-width: 768px) {
@@ -1105,12 +1122,6 @@ footer {
 /* НАША КОМАНДА */
 .profile-card {
   background-color: var(--team-block-color);
-  padding: 60px 0;
-}
-@media screen and (min-width: 1200px) {
-  .profile-card {
-    padding: 94px 0;
-  }
 }
 .profile-card__list {
   display: flex;
@@ -1143,16 +1154,8 @@ footer {
 .profile-card__text {
   margin-bottom: 16px;
 }
+
 /* Постійні клієнти */
-.vector-card {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .vector-card {
-    padding: 94px 0;
-  }
-}
 .vector-card__title {
   font-weight: 700;
   font-size: 36px;
