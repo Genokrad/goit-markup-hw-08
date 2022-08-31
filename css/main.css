@@ -708,12 +708,19 @@ button {
 .menu-open {
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
 
 .menu-close {
   background-color: var(--main-color);
   position: absolute;
   right: 25px;
   top: 21px;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-close-icone {
@@ -807,6 +814,18 @@ button {
   width: 1px;
   height: 22px;
   background-color: var(--accent-color);
+}
+
+.menu-open__icon {
+  display: flex;
+  width: 24px;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-open {
+  background-color: transparent;
 }
 
 /* СЕКЦИЯ ПРЕИМУЩЕСТВА */
