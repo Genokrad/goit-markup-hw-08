@@ -276,11 +276,35 @@
 
           <ul class="profile-card__list list">
             <li class="profile-card__item">
+              <picture>
+                <source
+                  srcset="
+                ./images/mob/studio/ihordemianenko-mob.jpg 1x
+                ./images/mob/studio/ihordemianenko-mob@2x.jpg 2x
+              "
+              media="(min-width:1200px)"
+                />
+                <source
+                srcset="
+              ./images/desktop/studio/ihordemianenko-mob.jpg
+              ./images/mob/studio/ihordemianenko-mob@2x.jpg
+              "
+              media="(min-width:768px)"
+                />
+                <source
+                srcset="
+              ./images/mob/studio/ihordemianenko-mob.jpg
+              ./images/mob/studio/ihordemianenko-mob@2x.jpg
+              "
+              media="(max-width:767px)"
+            />
               <img
-                class="profile-card__img"
-                src="./images/img-i-dem.jpg"
-                alt="дізайнер продукта"
-              />
+              class="profile-card__img"
+              src="./images/mob/studio/ihordemianenko-mob.jpg"
+              alt="дізайнер продукта"
+            />
+              </picture>
+
               <div class="profile-card__description">
                 <h3 class="profile-card__title">Ігор Дем'яненко</h3>
                 <p class="profile-card__text">Product Designer</p>
