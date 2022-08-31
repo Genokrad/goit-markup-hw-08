@@ -856,21 +856,19 @@ button {
 }
 
 /* СЕКЦИЯ ПРЕИМУЩЕСТВА */
-.about {
-  display: flex;
-  width: 480px;
-}
-@media screen and (min-width: 768px) {
-  .about {
-    width: 768px;
-  }
+.about__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .about {
-    width: 1200px;
+  .about__container {
     padding-top: 94px;
     padding-bottom: 47px;
   }
+}
+
+.about {
+  display: flex;
 }
 .about__list {
   display: flex;
@@ -1095,7 +1093,6 @@ footer {
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ */
 .pictures {
   padding-top: 47px;
-  padding-bottom: 94px;
   display: none;
 }
 @media screen and (min-width: 1200px) {
